@@ -1,0 +1,32 @@
+
+<html>
+
+<head>
+  <title>Assignment 3</title>
+  <style>
+  .header {
+    margin-bottom: 1em;
+  }
+    h1 { color: blue; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Thank U Next - Ariana Grande</h1>
+    <a href="https://genius.com/Ariana-grande-thank-u-next-lyrics">Lyrics</a>
+  </div>
+  <div class="content">
+    <img src="Thank U Next.png" />
+    <br/>
+    <p>
+      description....
+    </p>
+    <p>
+    A world cloud made with lyrics from Thank U Next by Ariana Grande
+      <ul>
+        
+      </ul>
+    </p>
+  </div>
+</body>
+</html>
