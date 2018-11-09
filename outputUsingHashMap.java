@@ -4,7 +4,7 @@ import java.io.*;
 public class outputUsingHashMap{
   public static void main(String[] args) throws Exception{
     //make a HashMap to store lyric and corresponding number of instances individual lyric appears
-    Map<String, Integer> map = new HashMap<String, Integer>();
+    Map<Integer, String> map = new HashMap<Integer, String>();
     //given a file with lyrics
     File file = new File("C:\\Users\\Chang\\Desktop\\Thank U Next.txt");
     //create two scanners
@@ -19,15 +19,15 @@ public class outputUsingHashMap{
     }
     PrintWriter pw = new PrintWriter("output.txt");
     
-    for(Map.Entry<String, Integer> entry : map.entrySet()){
-        System.out.println(entry.getKey()+": "+entry.getValue());
-        pw.println(entry.getKey()+": "+entry.getValue());
+    for(Map.Entry<Integer, String> entry : map.entrySet()){
+        //System.out.println(entry.getKey()+": "+entry.getValue());
+        pw.println(entry.getValue()+": "+entry.getKey());
         
     }
     pw.close();
   }
   
-  public static void getTimes(String word, Map<String, Integer> map)throws Exception{
+  public static void getTimes(String word, Map<Integer, String> map)throws Exception{
     File file = new File("C:\\Users\\Chang\\Desktop\\Thank U Next.txt");
         Scanner sc = new Scanner(file);
   int times = 0;
