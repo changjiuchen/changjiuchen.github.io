@@ -39,6 +39,6 @@ public class outputUsingHashMap{
     }
     //System.out.println(word+": "+times);
     //make a new entry into HashMap
-    map.put(word, times);
+    map.put(times, word);
   }
 }
